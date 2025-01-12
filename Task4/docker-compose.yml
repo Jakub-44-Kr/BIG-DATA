@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  hazelcast-node1:
+    build: .
+    networks:
+      - hazelcast-net
+  hazelcast-node2:
+    build: .
+    networks:
+      - hazelcast-net
+networks:
+  hazelcast-net:
